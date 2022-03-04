@@ -1,7 +1,9 @@
+export type HashFunction = (str: string, seed?: number) => number
+
 // Returns a hash number based on the Gosling Emacs algorithm.
 //
 // Source: https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
-export function emacs(str: string) {
+export const emacs: HashFunction = (str: string) => {
   var hash = 0,
     i,
     chr
@@ -17,7 +19,7 @@ export function emacs(str: string) {
 // Returns a 53-bit hash number based on the MurmurHash and xxHash algorithms.
 //
 // Source: https://stackoverflow.com/questions/7616461/generate-a-hash-from-string-in-javascript
-export function cyrb53(str: string, seed = 0) {
+export const cyrb53: HashFunction = (str: string, seed = 0) => {
   let h1 = 0xdeadbeef ^ seed
   let h2 = 0x41c6ce57 ^ seed
   for (let i = 0, ch; i < str.length; i++) {
