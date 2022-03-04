@@ -1,9 +1,9 @@
 {
-  "name": "string-to-array-element",
+  "name": "hash",
   "version": "1.0.0",
-  "description": "Maps a string to an array element",
+  "description": "Maps a string to a number",
   "main": "src/index.js",
-  "repository": "git@github.com:bodokaiser/string-to-array-element.git",
+  "repository": "git@github.com:bodokaiser/hash.git",
   "author": "Bodo Kaiser <i@bodokaiser.io>",
   "license": "MIT",
   "scripts": {
