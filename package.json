@@ -1,7 +1,7 @@
 {
   "name": "hash",
   "version": "1.0.0",
-  "description": "Maps a string to a number",
+  "description": "Provides hash algorithms to deterministically map a string to an integer",
   "main": "src/index.js",
   "repository": "git@github.com:bodokaiser/hash.git",
   "author": "Bodo Kaiser <i@bodokaiser.io>",
